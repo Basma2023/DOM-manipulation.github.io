@@ -1,0 +1,93 @@
+/* Setting base styles for the entire page */
+body {
+    font-family: 'Calibri', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Styling for the header section */
+header {
+    background-color: #3d2828;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Styling for the navigation menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a {
+    display: block;
+    padding: 8px;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+/* Styling for the main content section */
+#mainContent {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Styling for the sidebar */
+#sidebar {
+    flex: 1;
+    min-height: calc(100vh - 20px); /* Adjust the value to leave some space above the footer */
+    padding: 20px;
+    background-color: #cfc9c9;
+}
+
+/* Styling for the main sections */
+#mainSections {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+/* Styling for individual sections within the main content */
+section {
+    margin-bottom: 20px;
+}
+
+/* Additional styling for better appearance */
+section {
+    margin-bottom: 20px;
+}
+
+/* Styling for the footer section */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+    position: relative; /* Add this property */
+    bottom: 0; /* Add this property */
+}
+
+/* Styling for buttons */
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Defining the title of the webpage -->
+    <title>DOM Manipulation Assignment</title>
+    
+    <!-- Linking the external stylesheet for styling -->
+    <link rel="stylesheet" href="/html/css/DOM.css">
+</head>
+<body>
+    <!-- The header section containing the main title -->
+    <header id="pageHeader">
+        <h1>DOM Manipulation Assignment</h1>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <!-- Navigation links -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content section -->
+    <div id="mainContent">
+        <!-- Sidebar on the left -->
+        <div id="sidebar">
+            <h2>Sidebar</h2>
+            <!-- List of items in the sidebar with onclick events on the pointers to change the 
+                content of main section 1-->
+            <ul>
+                <li onclick="changeContent('HTML')">HTML</li>
+                <li onclick="changeContent('CSS')">CSS</li>
+                <li onclick="changeContent('JavaScript')">JavaScript</li>
+            </ul>
+            
+            <!-- Buttons for additional functionality -->
+            <button onclick="changeColorScheme()">Change Color Scheme</button>
+            <button onclick="addItem()">Add Item</button>
+            <button onclick="removeItem()">Remove Item</button>
+        </div>
+
+        <!-- Main content sections on the right -->
+        <div id="mainSections">
+            <!-- Section 1 with a title and description -->
+            <section id="mainSection1">
+                <h2>Main Section 1: Introduction to DOM</h2>
+                <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, allowing scripts to dynamically update content, structure, and style.</p>
+            </section>
+
+            <!-- Section 2 with a title and description -->
+            <section id="mainSection2">
+                <h2>Main Section 2: DOM Manipulation Techniques</h2>
+                <p>DOM manipulation involves various techniques such as selecting elements, modifying content, adding or removing elements, and handling events. JavaScript is commonly used to interact with the DOM, providing a powerful way to create dynamic and interactive web pages.</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer section at the bottom of the page -->
+    <footer>
+        <!-- Footer text indicating the author -->
+        DOM Manipulation Assignment by Basma
+    </footer>
+
+    <!-- Including the external JavaScript file for scripting -->
+    <script src="/html/js/main.js"></script>
+</body>
+</html>
